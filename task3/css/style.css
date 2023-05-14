@@ -1,0 +1,274 @@
+/* CSS HEX 
+--green-blue: #306BAAff;
+--magnolia: #EBEAF4ff;
+--aero: #67BCE1ff;
+--tekhelet: #44398Dff;
+--marian-blue: #3C3B8Cff;
+--light-blue : #add2f0;
+--super-light-blue : #d6edff;
+--grey-blue : #a7bccd;
+*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+html {
+
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+}
+
+@media (orientation: landscape) {
+    .content {
+        flex-direction: row;
+    }
+
+    .logo {
+        margin: auto auto auto 0px;
+    }
+
+    #image {
+        max-width: 450px;
+    }
+}
+
+@media (orientation: portrait) or (max-width: 950px){
+    header {
+        flex-direction: column;
+        min-width: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    #image {
+        max-height: 400px;
+    }
+
+}
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans';
+}
+
+/*--------HEADER-------*/
+header {
+    display: flex;
+    background-color: #44398D;
+    background-image: linear-gradient(to top, #44398D, #423597, #4739a2, #554DC7);
+    padding: 10px 10px;
+    width: 100%;
+    height: 6em;
+    color: #ffffff;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2px 2px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.home, .about, .login {
+    flex: 1;
+    font-size: 16px;
+    margin: 0px 0px 10px 10px;
+    height: 2.3em;
+    width: 4.2em;
+    text-align: center;
+    padding: 8px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.login {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.login:hover, .home:hover, .about:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+
+/*-------CONTENT---------*/
+.content {
+    background-image: linear-gradient(to bottom, #44398D, #554dc7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 30px 30px;
+}
+
+.content > div {
+    flex: 1;
+}
+
+.webimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------Music--------*/
+.container {
+    background-image: linear-gradient(180deg, #ffffff 23.8%, #b3b8f5 92%);
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 25em;
+    min-width: 23em;
+    justify-content: center;
+    padding: 10px 10px;
+    max-width: 550px;
+}
+
+.music-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 15px 20px 0 rgba(120, 130, 237, 0.6);
+    display: flex;
+    padding: 20px 30px;
+    position: relative;
+    margin: 100px 0;
+    z-index: 10;
+}
+
+h2 {
+    color: #4739a2;
+}
+
+.img-container {
+    position: relative;
+    width: 110px;
+}
+
+.img-container::after {
+    content: '';
+    background-color: #d6edff;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    border-radius: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.img-container img {
+    width: inherit;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+
+.music-container.play .img-container img {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.action-btn {
+    background-color: #fff;
+    border: 0;
+    color: #a7bccd;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.action-btn-big {
+    color: #a7bccd;
+    font-size: 30px;
+}
+
+.action-btn:focus {
+    outline: 0;
+}
+
+.music-info {
+    background-color: rgba(180, 215, 245, 0.1);
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: calc(100% - 40px);
+    opacity: 0;
+    padding: 10px 10px 10px 150px;
+    z-index: -999;
+    transform: translateY(0%);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.music-container.play .music-info {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.progress-container {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 10px;
+    width: 100%;
+}
+
+.progress {
+    background-color: #4739a2;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+/*-------FOOTER---------*/
+
+
+footer {
+    text-align: center;
+    margin: auto 0px auto auto;
+    margin-bottom: 0px;
+    max-width: 100%;
+    padding: 15px 15px;
+    height: 5em;
+}
