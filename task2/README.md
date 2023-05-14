@@ -1,7 +1,7 @@
 # Task 2 : Quiz App
 - Dynamic Quiz App that works well and looks good both on desktop and mobile devices.
 - Shows a gif if the user wins the quiz.
-- Contains 3 files i.e 
+- Contains 4 files i.e 
   - index.html : HTML page
   - script.js : Javascript file for quiz logic
   - css/style.css : Separate file for styling
@@ -9,8 +9,10 @@
 
 ## On Desktop
 
-![Screenshot from 2023-05-13 16-08-41](https://github.com/etank0/sync-tasks/assets/89385145/2703b492-063e-4c86-9ff7-103a265df0e2)
+![task2-desk1](https://github.com/etank0/sync-tasks/assets/89385145/22baea41-87a0-4d80-b537-0f4cd8adbd03)
+
+![task2-desk2](https://github.com/etank0/sync-tasks/assets/89385145/56eb983a-1bfc-4964-aaf7-b0cec5036ac8)
 
 ## On Mobile
 
-![Screenshot from 2023-05-13 16-08-53](https://github.com/etank0/sync-tasks/assets/89385145/d750fb0f-7f33-4bb2-9390-04a18404ffd2)
+![task2-mob1](https://github.com/etank0/sync-tasks/assets/89385145/72fa6230-defb-4117-a8c5-984755535c96)
