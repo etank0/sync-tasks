@@ -11,10 +11,9 @@
 
 ## On Desktop
 
-![task2-desk1](https://github.com/etank0/sync-tasks/assets/89385145/22baea41-87a0-4d80-b537-0f4cd8adbd03)
+![Screenshot from 2023-05-15 01-02-23](https://github.com/etank0/sync-tasks/assets/89385145/61674f6d-b15b-4c8a-8f2f-980cea489cab)
 
-![task2-desk2](https://github.com/etank0/sync-tasks/assets/89385145/56eb983a-1bfc-4964-aaf7-b0cec5036ac8)
 
 ## On Mobile
 
-![task2-mob1](https://github.com/etank0/sync-tasks/assets/89385145/72fa6230-defb-4117-a8c5-984755535c96)
+![Screenshot from 2023-05-15 01-02-41](https://github.com/etank0/sync-tasks/assets/89385145/92a4bf6e-5e22-4532-a863-da22511c3ce5)
